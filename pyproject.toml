@@ -1,0 +1,21 @@
+[project]
+name = "coinbasedownloader"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Constantine Afanasyev",email = "const.afanasyev@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp (>=3.12.7,<4.0.0)",
+    "tenacity (>=9.1.2,<10.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "coinbasedownloader", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
